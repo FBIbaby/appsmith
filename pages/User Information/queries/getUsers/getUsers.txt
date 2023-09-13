@@ -1,0 +1,1 @@
+SELECT * FROM public."users" ORDER BY ID LIMIT 10;
