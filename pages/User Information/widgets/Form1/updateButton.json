@@ -2,7 +2,7 @@
     "resetFormOnClick": true,
     "boxShadow": "none",
     "mobileBottomRow": 37,
-    "widgetName": "updatButton",
+    "widgetName": "updateButton",
     "onClick": "{{updateUsers.run().then(() => {\n  getUsers.run();\n});}}",
     "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
     "displayName": "Button",
