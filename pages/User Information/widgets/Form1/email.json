@@ -27,8 +27,9 @@
     ],
     "isLoading": false,
     "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+    "originalBottomRow": 23,
     "mobileBottomRow": 23,
-    "widgetName": "emailInput",
+    "widgetName": "email",
     "displayName": "Input",
     "searchTags": [
         "form",
@@ -56,6 +57,7 @@
     "renderMode": "CANVAS",
     "mobileTopRow": 16,
     "responsiveBehavior": "fill",
+    "originalTopRow": 16,
     "mobileLeftColumn": 31,
     "maxDynamicHeight": 9000,
     "shouldAllowAutofill": true,

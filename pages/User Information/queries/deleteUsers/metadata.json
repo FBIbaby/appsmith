@@ -2,7 +2,7 @@
   "pluginType": "DB",
   "pluginId": "postgres-plugin",
   "unpublishedAction": {
-    "name": "updateUsers",
+    "name": "deleteUsers",
     "datasource": {
       "name": "usersTutorialDB",
       "pluginId": "postgres-plugin",
@@ -18,7 +18,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "UPDATE users \nSET name = {{nameInput.text}}, \nemail = {{email.text}}, \ndob = {{dobInput.selectedDate}}\nWHERE id = {{usersTable.selectedRow.id}} ",
+      "body": "DELETE FROM users WHERE NAME = {{ usersTable.selectedRow.name }}",
       "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
@@ -36,18 +36,15 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "dobInput.selectedDate",
-      "email.text",
-      "nameInput.text",
-      "usersTable.selectedRow.id"
+      " usersTable.selectedRow.name "
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": [],
-    "createdAt": "2023-09-13T07:25:15Z"
+    "createdAt": "2023-09-13T11:13:17Z"
   },
-  "id": "User Information_updateUsers",
+  "id": "User Information_deleteUsers",
   "deleted": false,
-  "gitSyncId": "650127f3f7b4765833d7cbdf_65012a1732e29a0159c24516"
+  "gitSyncId": "650163d4473b3635389ff926_6501994df1ebd5644ad99bf0"
 }
