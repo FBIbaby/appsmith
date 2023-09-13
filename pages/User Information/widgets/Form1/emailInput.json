@@ -50,7 +50,7 @@
     "rightColumn": 54,
     "widgetId": "quvbwt5ewi",
     "minWidth": 450,
-    "label": "Email",
+    "label": "EmailAddress",
     "parentId": "v255c9ebeh",
     "labelAlignment": "left",
     "renderMode": "CANVAS",
